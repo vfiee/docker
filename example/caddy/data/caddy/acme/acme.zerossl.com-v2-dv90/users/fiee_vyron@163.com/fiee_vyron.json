@@ -1,0 +1,14 @@
+{
+	"status": "valid",
+	"contact": [
+		"mailto:fiee_vyron@163.com"
+	],
+	"termsOfServiceAgreed": true,
+	"externalAccountBinding": {
+		"protected": "eyJhbGciOiJIUzI1NiIsImtpZCI6IlZzdnRSdlBpak1MYzFDeng5TWxnSWciLCJ1cmwiOiJodHRwczovL2FjbWUuemVyb3NzbC5jb20vdjIvRFY5MC9uZXdBY2NvdW50In0",
+		"payload": "eyJjcnYiOiJQLTI1NiIsImt0eSI6IkVDIiwieCI6ImdoQWl3ZlhEeDVvR3VDOGQ5SC1ZRmdTWG9oMmgyOWtmYnJPajlNVWpQSkEiLCJ5IjoiWGk5RnlNV21jY05IY3FRdjlsMVhRemduVGZIYWFuTjhuS1JEYmJ5OThMOCJ9",
+		"signature": "lS4T9u9tcIH7x6YhoFDgrnJnfPUfofegQZufLVtP-ns"
+	},
+	"orders": "https://acme.zerossl.com/v2/DV90/account/VsvtRvPijMLc1Czx9MlgIg/orders",
+	"location": "https://acme.zerossl.com/v2/DV90/account/VsvtRvPijMLc1Czx9MlgIg"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "Collection of Docker related repositories",
+  "scripts": {
+    "build": "node scripts/build",
+    "dev": "cross-env RUN_DEV=true pnpm run build",
+    "release":"cross-env RUN_RELEASE=true  pnpm run build"
+  },
+  "keywords": [
+    "docker",
+    "docker-compose",
+    "docker images"
+  ],
+  "packageManager": "pnpm@7.13.1",
+  "author": "vyron vyronfiee@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

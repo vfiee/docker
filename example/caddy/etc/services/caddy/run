@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv sh
+
+exec caddy run --config /etc/caddy/Caddyfile --adapter caddyfile

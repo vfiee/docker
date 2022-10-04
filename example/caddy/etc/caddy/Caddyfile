@@ -1,0 +1,32 @@
+{
+	email vyronfiee@gmail.com
+	git {
+		repo github-vite-demo {
+			base_dir /tmp/ssh
+			url https://github.com/vfiee/github-vite-demo.git
+			branch main
+			auth key /root/.ssh/id_rsa
+			post pull exec {
+				name installAndBuild
+				command /bin/sh
+				args "/scripts/installAndBuild.sh"
+			}
+		}
+	}
+}
+
+:2022 {
+	root * /srv
+	encode gzip
+	file_server browse
+}
+
+:2023 {
+	route /update {
+		git update repo github-vite-demo
+	}
+	root * /tmp/ssh/github-vite-demo/dist
+	encode gzip
+	file_server browse
+}
+# https://caddyserver.com/docs/caddyfile

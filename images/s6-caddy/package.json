@@ -1,0 +1,7 @@
+{
+    "name": "vyronfiee/s6-caddy",
+    "version": "2.6.1",
+    "description": "caddy image",
+    "author": "vyron",
+    "license": "MIT"
+}

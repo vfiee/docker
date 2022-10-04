@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv sh
+
+echo "watching Caddyfile..."
+
+watchCaddyfile=/etc/caddy/Caddyfile
+
+while inotifywait -e create,move,delete,modify $watchCaddyfile; do
+    echo "Caddyfile is changed, restarting caddy service!"
+    # s6-svc -r /var/run/s6/services/caddy
+    caddy reload --config /etc/caddy/Caddyfile
+done;
